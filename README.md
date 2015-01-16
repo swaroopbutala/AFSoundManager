@@ -39,7 +39,7 @@ If you want to set a specific path, do include the actual file name in the path 
 
 Example:
 
-	[[AFSoundManager sharedManager] startPlayingLocalFileWithName:@"filename.mp3" atPath:nil withCompletionBlock:^(int percentage, CGFloat elapsedTime, CGFloat timeRemaining, NSError *error) {
+	[[AFSoundManager sharedManager] startPlayingLocalFileWithName:@"filename.mp3" atPath:nil withCompletionBlock:^(int percentage, CGFloat elapsedTime, CGFloat timeRemaining, NSError *error, BOOL finished) {
 
         if (!error)
         	//This block will be fired when the audio progress increases in 1%
