@@ -35,6 +35,7 @@ Then, you only need to call one method to start playing your audio.
 
 ###Local playing
 If you need to play a local file, call ```-startPlayingLocalFileWithName:atPath:withCompletionBlock:```. If you want to use the default path, just set it as ```nil```.
+If you want to set a specific path do include the actual file name in the path itself. For eg: ```/var/mobile/Containers/Data/Application/XXX/Documents/sample.m4a```. Also in this case you can set the name to ```nil```
 
 Example:
 
